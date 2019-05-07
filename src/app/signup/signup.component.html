@@ -1,0 +1,33 @@
+<!--<popup>{{errorMessage}}</popup>-->
+<div class="login-page" >
+  <div class="login-content login-content-signup">
+    <div>
+      <h2>Sign Up</h2>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()" class="wrapper-box" role="form">
+        <div class="form-group">
+          <label for="Username">Username</label>
+          <input type="text" class="form-control" id="Username" formControlName="Username">
+        </div>
+        <div class="form-group">
+          <label for="EmailID">EmailID</label>
+          <input type="text" class="form-control"id="EmailID" formControlName="EmailID">
+        </div>
+        <div class="form-group">
+          <label for="Password">Password</label>
+          <input type="password" class="form-control" id="Password" formControlName="Password">
+        </div>
+        <button type="submit"  class="btn btn-info btn-lg">SignUp</button>
+
+      </form>
+    </div>
+  </div>
+
+
+  <div class="login-switcher">
+    <div class="login-switcher-signin">
+      <h3>Have an account?</h3>
+      <button routerLink="/signin">Login</button>
+    </div>
+  </div>
+
+</div>

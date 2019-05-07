@@ -1,0 +1,39 @@
+<!--<popup>{{errorMessage}}</popup>-->
+<div class="login-page" >
+  <div class="login-content login-content-signup">
+    <div>
+      <h2>Sign Up</h2>
+      <form class="wrapper-box" role="form">
+        <input type="text"
+               [(ngModel)]="fullname"
+               class="form-control form-control-username"
+               placeholder="Username"
+               name="fullname"
+               required >
+        <input type="email"
+               [(ngModel)]="email"
+               class="form-control form-control-email"
+               placeholder="Email address"
+               name="email"
+               required >
+        <input type="password"
+               [(ngModel)]="password"
+               class="form-control form-control-password"
+               placeholder="Password"
+               name="password"
+               required >
+
+        <button type="submit" (click)="register()" class="btn btn-submit btn-default pull-right">Sign up</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="login-switcher">
+    <div class="login-switcher-signin">
+      <h3>Have an account?</h3>
+      <button routerLink="/login">Login</button>
+    </div>
+  </div>
+
+</div>

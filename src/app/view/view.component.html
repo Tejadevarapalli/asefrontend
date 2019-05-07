@@ -1,0 +1,61 @@
+<div class='header'>
+  MODEL DETAILS
+</div>
+<div class="projectdetails" style="font-size: large;font-weight: bold;">
+
+  <div class ="details1"  style="width: 50%;float: left">
+    <span *ngFor='let projectdetails of projectdetails'>
+
+        <div class="detailstype" style=" float:left;">Project title:</div>
+      <div style=" float:left"><i>{{ projectdetails.Projecttitle }}</i></div>
+
+     <br>
+     <div class="project description">
+        <div class="detailstype"  style=" float:left;width: 50%">Project Description:</div>
+      <div class="text" style="width: 41%; float: right">
+        <span style=" float:left ;overflow-wrap: break-spaces">{{ projectdetails.ProjectDescription }} </span>
+
+      </div>
+       </div>
+
+
+
+      <br>
+        <div class="detailstype"  style=" float:left">Github URL:</div>
+        <a href="{{projectdetails.GithubURL}}" style=" float:left">{{ projectdetails.GithubURL }}</a>
+
+      <br>
+        <div class="detailstype"  style=" float:left">Likes:</div>
+       <div style=" float:left">{{ projectdetails.Likes }}</div>
+
+    </span>
+  </div>
+  <div class="details1 " style="width: 50%;float: right">
+    <div class="comments" style="padding-left: 20%;padding-top: 3%">
+      <button class="btn btn-primary btn-lg active" (click)="download()">Download</button>
+      <div style="padding-top: 2%">Comments</div>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+        <label>
+          <textarea class="form-control" id="Comment" formControlName="Comment" style="width: 65%">  </textarea>
+        </label>
+        <br>
+          <button type="submit"  class="btn btn-primary btn-lg btn-bloc">Submit</button>
+        </div>
+      </form>
+      <div class="comment details">
+     <span *ngFor='let commentdetails of commentdetails'>
+
+        <div  style=" float:left; color: lightblue">{{ commentdetails.User }}:</div>
+       <br>
+      <div style=" float:left">{{ commentdetails.Comment }}</div>
+       <br>
+     </span>
+      </div>
+
+    </div>
+  </div>
+  <div class="display comments"></div>
+</div>
+
+

@@ -1,0 +1,24 @@
+thead {
+  color: #337AB7;
+}
+a.projectnames {
+  text-transform: capitalize;
+  font-style: italic;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  font-weight: bold;
+  height: 53px;
+}
+
+.name{
+  font-style: italic;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: cadetblue;
+  color: white;
+}

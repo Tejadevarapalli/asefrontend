@@ -1,0 +1,44 @@
+
+thead {
+  color: #337AB7;
+}
+div.projectdetails {
+  font-style: italic ;
+
+  text-transform:capitalize ;
+  width: 100%;
+}
+div.detailstype
+{color: #337AB7;
+  width: 60%;
+  padding-left: 10%;
+  padding-bottom: 1%;
+}
+div.details1
+{
+  width: 50%;
+  float: left;
+
+}
+div.details2
+{
+  width: 50%;float: right;
+
+}
+
+
+th {
+  background-color: cadetblue;
+  color: white;
+}
+
+div.header{
+  font-weight: bold;
+  color:aliceblue;
+  height: 200%;
+  text-align: center;
+  box-shadow: 0 0 black;
+  text-shadow: 0 0 11px black;
+  padding: 2% 2%;
+  background-color: #991111; border-radius: 10px;
+}

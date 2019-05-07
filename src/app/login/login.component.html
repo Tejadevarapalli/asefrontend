@@ -1,0 +1,27 @@
+<!--<popup>{{eMessage}}</popup>-->
+<div class="login-page" >
+  <div class="login-content login-content-signin">
+    <div>
+      <h2>Log in</h2>
+      <form class="wrapper-box" role="form">
+        <input type="email"
+               placeholder="Email-Id"
+               class="form-control form-control-email"
+               [(ngModel)]="email" name="email"
+               required>
+        <input type="password"
+               [(ngModel)]="password"
+               class="form-control form-control-password"
+               name="password"
+               placeholder="Password"
+               required >
+        <button type="submit" (click)="login()" class="btn btn-submit btn-default pull-right">Log in</button>
+      </form>
+    </div>
+  </div>
+  <div class="login-switcher">
+    <div class="login-switcher-signup">
+      <h3>Don't have an account?</h3>
+      <button routerLink="/register">Sign Up</button>
+    </div>
+  </div>

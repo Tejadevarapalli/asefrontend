@@ -1,0 +1,22 @@
+<div class="profile-wrapper">
+  <div class="profile-image">
+    <img src="">
+  </div>
+  <h2 class="profile-title capitalize">{{profiledata.Username}}</h2>
+  <div class="profile-info">
+    <div class="content">
+      <h3>About</h3>
+
+      <input type="text" style="border:none" class="capitalize" [(ngModel)]="this.description" >
+      <p class="link"><i class="fa fa-globe" aria-hidden="true">Email:</i>{{profiledata.EmailID}}</p>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <span class="number">482</span> Likes
+      </div>
+      <div class="stat">
+        <span class="number">1,061</span> Following
+      </div>
+    </div>
+  </div>
+</div>
