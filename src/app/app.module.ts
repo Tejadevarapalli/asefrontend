@@ -14,7 +14,7 @@ import { RegisterComponent } from './register/register.component';
 import { environment} from '../environments/environment';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
-import { FileUploadModule } from'ng2-file-upload';
+import { FileUploadModule } from 'ng2-file-upload';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { MymodelsComponent } from './mymodels/mymodels.component';
@@ -40,11 +40,8 @@ import { ModelsComponent } from './models/models.component';
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule,
     FileUploadModule,
     HttpClientModule,
-    AngularFireAuthModule,
     // PopupModule.forRoot(),
     AppRoutingModule
   ],
