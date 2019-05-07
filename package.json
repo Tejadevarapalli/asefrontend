@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "heroku-postbuild": "ng build --prod",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
@@ -11,6 +12,8 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "^7.3.8",
+    "@angular/compiler-cli": "^7.2.14",
     "@angular/animations": "~7.2.0",
     "@angular/common": "~7.2.0",
     "@angular/compiler": "~7.2.0",
@@ -30,17 +33,19 @@
     "rxjs": "6.3.3",
     "rxjs-compat": "6.3.3",
     "tslib": "^1.9.0",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "typescript": "~3.2.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
-    "@angular/cli": "~7.3.7",
-    "@angular/compiler-cli": "~7.2.0",
+    "@angular/cli": "^7.3.8",
+    "@angular/compiler-cli": "^7.2.14",
     "@angular/language-service": "~7.2.0",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.0.0",
@@ -52,5 +57,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
+  },
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.4.1"
   }
 }
