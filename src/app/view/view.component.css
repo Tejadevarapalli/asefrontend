@@ -37,6 +37,7 @@ div.detailstype
 div.detailstype1
 {color: #337AB7;
   width: 60%;
+  text-transform: lowercase;
   padding-left: 10%;
   padding-bottom: 1%;
 }
