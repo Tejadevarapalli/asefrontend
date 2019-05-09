@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders} from '@angular/common/http'
 
-const uri = 'http://ase-backend.herokuapp.com';
+const uri = 'https://ase-backend.herokuapp.com';
 
 @Injectable({
   providedIn: 'root'

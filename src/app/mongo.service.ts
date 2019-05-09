@@ -5,7 +5,7 @@ import {catchError, tap, map} from 'rxjs/operators';
 import {until} from 'selenium-webdriver';
 import titleContains = until.titleContains;
 
-const uri = 'http://ase-backend.herokuapp.com';
+const uri = 'https://ase-backend.herokuapp.com';
 
 @Injectable({
   providedIn: 'root'
@@ -16,9 +16,6 @@ const uri = 'http://ase-backend.herokuapp.com';
 export class mongoService {
 
   constructor(private http: HttpClient) {}
-
-  
-  
   sendDetails(formdata) {
     console.log('checkpoint', formdata);
     return this.http.post(uri + '/sendDetails', formdata);

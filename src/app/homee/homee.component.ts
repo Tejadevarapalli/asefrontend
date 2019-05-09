@@ -12,7 +12,7 @@ const httpOptions = {
 };
 
 
-const uri = 'http://ase-backend.herokuapp.com/file/upload';
+const uri = 'https://ase-backend.herokuapp.com/file/upload';
 
 
 @Component({
