@@ -10,10 +10,10 @@
       <div style=" float:left"><i>{{ projectdetails.Projecttitle }}</i></div>
 
      <br>
-     <div class="project description">
+    <div class="projectDescription">
         <div class="detailstype"  style=" float:left;width: 50%">Project Description:</div>
-      <div class="text" style="width: 41%; float: right">
-        <span style=" float:left ;overflow-wrap: break-spaces">{{ projectdetails.ProjectDescription }} </span>
+      <div class="text" style="width: 41%; float: right;height: auto">
+        <span style=" float:left ;overflow-wrap: break-spaces"> {{projectdetails.ProjectDescription}}</span>
 
       </div>
        </div>
@@ -43,7 +43,7 @@
           <button type="submit"  class="btn btn-primary btn-lg btn-bloc">Submit</button>
         </div>
       </form>
-      <div class="comment details">
+      <div class="comment details" style="width: 327px;height: 101px;overflow-y: scroll;cursor: all-scroll;">
      <span *ngFor='let commentdetails of commentdetails'>
 
         <div  style=" float:left; color: lightblue">{{ commentdetails.User }}:</div>

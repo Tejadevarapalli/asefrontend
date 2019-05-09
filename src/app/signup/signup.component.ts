@@ -22,11 +22,12 @@ export class SignupComponent implements OnInit {
   }
   onSubmit() {
     console.log(this.form.value);
-      this.formDetails.signupDetails(this.form.value).subscribe(result => {
+    this.formDetails.signupDetails(this.form.value).subscribe(result => {
         if (result !== 'Please fill the details' && result !== 'User exists') {
+          alert(result);
           this.router.navigateByUrl('/signin');
         } else {
-          console.log('login check point result - ', result);
+          alert(result);
         }
       });
   }

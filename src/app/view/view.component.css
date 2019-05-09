@@ -1,3 +1,22 @@
+div.text{
+  width:120px;
+  color: #0079c1;
+  height: 2em;
+  line-height: 1em;
+  font-size: 20px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  margin-bottom: 12px;
+  cursor: pointer;
+  word-break: break-all;
+  overflow:hidden;
+  white-space: nowrap;
+}
+div.text:hover{
+  overflow: visible;
+  white-space: normal;
+  height: auto;
+}
 
 thead {
   color: #337AB7;

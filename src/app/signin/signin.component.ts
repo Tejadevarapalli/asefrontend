@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup} from "@angular/forms";
-import {mongoService} from "../mongo.service";
+import {FormControl, FormGroup} from '@angular/forms';
+import {mongoService} from '../mongo.service';
 import {Router} from '@angular/router';
 
 @Component({
@@ -23,9 +23,10 @@ export class SigninComponent implements OnInit {
   onSubmit() {
     this.formDetails.signinDetails(this.form.value).subscribe(result => {
       if (result === 'Success') {
+        alert(result);
         this.router.navigateByUrl('/home/' + this.form.value.EmailID);
       } else {
-        console.log('login check point result - ', result);
+        alert(result);
       }
     });
   }

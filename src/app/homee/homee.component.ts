@@ -31,9 +31,7 @@ public projecttitle: any;
               public route: ActivatedRoute,public router: Router, public home: HomeComponent) {
     this.uploader.onCompleteItem = (item: any, response: any) => {
       this.filedata = JSON.parse(response);
-      console.log(this.filedata.originalname);
-      this._fileService.movefiles(this.filedata.originalname,this.route.snapshot.paramMap.get('id'), this.projecttitle).subscribe(data =>{
-        console.log(data);
+      this._fileService.movefiles(this.filedata.originalname, this.route.snapshot.paramMap.get('id'), this.projecttitle).subscribe(data => {
       });
     };
   }
