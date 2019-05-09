@@ -12,8 +12,8 @@ const httpOptions = {
 };
 
 
+const uri = 'http://ase-backend.herokuapp.com/file/upload';
 
-const uri = 'http://localhost:3000/file/upload';
 
 @Component({
   selector: 'app-homee',

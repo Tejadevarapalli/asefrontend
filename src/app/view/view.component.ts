@@ -60,7 +60,7 @@ export class ViewComponent implements OnInit {
       //        data => console.log(data),
       //        error => console.error(error)
       //      );
-      window.open('http://localhost:3000/file/download/' + this.projectdetails[0].User + '/' + this.projectdetails[0].Projecttitle);
+      window.open('https://ase-backend.herokuapp.com/file/download/' + this.projectdetails[0].User + '/' + this.projectdetails[0].Projecttitle);
     }
 
 
